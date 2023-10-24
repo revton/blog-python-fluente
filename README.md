@@ -126,4 +126,4 @@ print(pessoa_c.nome)  # Saída: Revton
 del pessoa_c.nome
 print(pessoa_c.nome)  # Saída: Atributo nome não encontrado
 ````
-Aqui, no construtor __init__, usamos self.__dict__['_data'] para contornar o nosso próprio método __setattr__ personalizado e inicializar diretamente o dicionário interno _data.
+Aqui, no construtor `__init__`, usamos `self.__dict__['_data']` para contornar o nosso próprio método `__setattr__` personalizado e inicializar diretamente o dicionário interno `_data`.
