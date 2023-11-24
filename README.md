@@ -127,3 +127,69 @@ del pessoa_c.nome
 print(pessoa_c.nome)  # Saída: Atributo nome não encontrado
 ````
 Aqui, no construtor `__init__`, usamos `self.__dict__['_data']` para contornar o nosso próprio método `__setattr__` personalizado e inicializar diretamente o dicionário interno `_data`.
+
+### Iteração
+
+Existem várias formas de iterar sobre coleções ou iteráveis em Python, incluindo a iteração assíncrona. Aqui estão algumas delas:
+
+#### 1. Iteração com for:
+
+Você pode usar um loop `for` para iterar sobre uma coleção ou iterável.
+````python
+lista = [1, 2, 3, 4]
+for item in lista:
+    print(item)
+````
+
+#### 2. Iteração com while:
+
+Usar um loop `while` com um iterador e o método `next()` para iterar manualmente.
+````python
+lista = [1, 2, 3, 4]
+iterador = iter(lista)
+while True:
+    try:
+        item = next(iterador)
+        print(item)
+    except StopIteration:
+        break
+````
+
+#### 3. Iteração com Comprensões de Lista(List Comprehension):
+
+Compreensões de lista fornece uma maneira concisa de criar uma lista.
+````python
+lista = [1, 2, 3, 4]
+[print(item) for item in lista]
+````
+
+#### 4. Iteração com função map:
+
+A função `map` aplica uma função para cada item da lista
+````python
+lista = [1, 2, 3, 4]
+def exibir(item):
+    print(item)
+
+list(map(exibir, lista))
+````
+
+#### 5. Iteração Assíncrona com async for:
+
+A iteração assíncrona pode ser realizada com `async for` em conjuntos de dados assíncronos, como objetos async generator.
+````python
+import asyncio
+
+async def async_generator():
+    for i in range(5):
+        await asyncio.sleep(1)
+        yield i
+
+async def main():
+    async for item in async_generator():
+        print(item)
+
+await main()
+````
+
+Estes são alguns métodos comuns para realizar iterações em Python, incluindo a iteração assíncrona que é especialmente útil em programação assíncrona para evitar o bloqueio enquanto aguarda por operações de E/S ou outras operações assíncronas.
