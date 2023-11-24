@@ -3,11 +3,16 @@ Blog sobre a leitura do Livro Python Fluente, Segunda Edição (2023) por Lucian
 
 Irei me guiar pelos capítulos para ir escrevendo.
 
-## Modelo dos dados
+## Índice
+- [Modelo dos dados](#modelo-dos-dados)
+    - [Coleções em Python](#coleções-em-python)
+    - [Acessando Atributos](#acessando-atributos)
+
+## [Modelo dos dados](#modelo-dos-dados)
 
 Adentrar o universo Python é descobrir um ecossistema rico em funcionalidades, com uma sintaxe elegante e intuitiva. Este artigo se propõe a ser um mergulho profundo nesse universo, explorando desde as coleções até os meandros da programação assíncrona.
 
-### Coleções em Python
+### [Coleções em Python](#coleções-em-python)
 
 As coleções no Python são um conjunto robusto de tipos de dados que facilitam o armazenamento e a manipulação de conjuntos de valores. Vamos explorar algumas das principais coleções:
 
@@ -33,7 +38,7 @@ meu_conjunto = {1, 2, 2, 3, 4}
 
 Cada um desses tipos de coleção tem seus próprios métodos e propriedades, permitindo manipulá-los de maneiras específicas, dependendo das necessidades do seu programa.
 
-### Acessando Atributos
+### [Acessando Atributos](#acessando-atributos)
 
 Em Python, os atributos de um objeto podem ser acessados de várias maneiras. Aqui estão algumas das formas comuns:
 
